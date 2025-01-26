@@ -25,7 +25,22 @@ Note the -y will auto answer yes to any prompts
 
 7. cd /Etc
 
-8. nano hosts  (Enter IP address 127.0.1.1 and your domain name)
+8. edit the hosts file.  nano hosts  (Enter IP address 127.0.1.1 and your domain name) ctrl O to write. ctrl x to exit
 ![hostsfile](https://github.com/user-attachments/assets/f3a68670-3ee8-400b-8010-cc3c256c7e5f)
+
+9. in the same directory edit the hostname file and add your domain name. nano hostname ctrl O to write. ctrl x to exit
+![hostnamefile](https://github.com/user-attachments/assets/d2eff3c9-dd6d-46f5-8a3a-285e369fdeb8)
+
+10. We will now create a user and add the user to the sudo group. Adduser "yourusername" sudo (Do not use quotes)
+
+11. Switch to the new user. su "username"
+
+12. Disable root access via ssh.
+
+sudo nano /etc/ssh/sshd_config
+scroll down and remove "yes" from "Permit root login" Type "No"
+![SShd_config](https://github.com/user-attachments/assets/4ad0f460-8d6d-40e2-b7b2-6f0a3f05f979)
+
+
  
 
