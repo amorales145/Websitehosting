@@ -99,8 +99,10 @@ sudo ufw status
 
     (we will make a new .conf file)
     sudo nano "websitename.com.conf"
-You need to paste the information in this file into your new config file.
-the file is available to copy and paste in the Maintenance_ConfigFile_Changes.txt file provided.
+
+    You need to paste the information in this file into your new config file.
+
+    the file is available to copy and paste in the Maintenance_ConfigFile_Changes.txt file provided.
     ![newConfigfile](https://github.com/user-attachments/assets/04a3e944-adbe-4309-91fc-da4d49709ec3)
 
 
