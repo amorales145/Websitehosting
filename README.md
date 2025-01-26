@@ -99,6 +99,7 @@ sudo ufw status
     (we will make a new .conf file)
     sudo nano "websitename.com.conf"
     
+    
 
 
 
