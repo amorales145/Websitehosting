@@ -47,11 +47,11 @@ scroll down and remove "yes" from "Permit root login" Type "No"  (write the file
 this will show all the services running labeled ssh
 ![sudosystemctlrestartsSSHD](https://github.com/user-attachments/assets/ccda5621-f19b-4a92-b85d-3fbe71697d0a)
 
+14. reboot (Note this will reload the kernal)
 
+15. install apache. sudo apt install apache2 apache2-doc apache2-utils
 
-15. 
-
-16. 
+16. check if apache running systemctl status apache2
 
 17. 
 
