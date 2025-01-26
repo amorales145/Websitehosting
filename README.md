@@ -118,7 +118,9 @@ Go to your website and you will see the default Index of page.
 ![Loadwebsiteinbrowser](https://github.com/user-attachments/assets/0f39c33e-9743-458c-8d6c-7755bf149f87)
 
 
-25.  As you can see in the screenshot the site is not secure.
+25.  At this point you can go to the default directory and upload your index.html file >  /var/www/html/yourwebsite.com/public_html
+
+As you can see once you load your website in the screenshot below the site is not secure.
    
   ![NotSecure](https://github.com/user-attachments/assets/49f5288e-5eba-4295-bbc6-a662b8d4d55c)
 
