@@ -42,6 +42,7 @@ scroll down and remove "yes" from "Permit root login" Type "No"  (write the file
 ![SShd_config](https://github.com/user-attachments/assets/4ad0f460-8d6d-40e2-b7b2-6f0a3f05f979)
 
 13. Restart Daemon. sudo systemctl restart sshd
+
 (NOTE)  IF SERVICE NOT FOUND USE sudo systemctl -l --type service --all | grep ssh
 this will show all the services running labeled ssh
 ![sudosystemctlrestartsSSHD](https://github.com/user-attachments/assets/ccda5621-f19b-4a92-b85d-3fbe71697d0a)
