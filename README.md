@@ -70,8 +70,11 @@ sudo ufw applist.  This will list available applications for the firewall.
 21. We will now configure and enable and update the firewall rules
 
 sudo ufw allow 'Apache full'
+
 sudo allow OpenSSH
+
 sudo ufw enable
+
 sudo ufw status
 ![UFWallowApacheFull](https://github.com/user-attachments/assets/7ea2fd35-2fdf-4c17-a089-1b284ac34fdc)
 
