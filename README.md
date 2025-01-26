@@ -111,7 +111,13 @@ sudo ufw status
 
 ![enablingsiteaftera2ensite](https://github.com/user-attachments/assets/31747445-e4a1-4b4b-9050-ccae9a412c03)
 
-    
+
+24. reload configuration: sudo systemctl reload apache2
+
+Go to your website and you will see the default Index of page.
+
+    ![Loadwebsiteinbrowser](https://github.com/user-attachments/assets/edd8954f-09b9-4e57-bb07-56d4d97267b6)
+
 
 
 
