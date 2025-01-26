@@ -118,8 +118,10 @@ Go to your website and you will see the default Index of page.
 ![Loadwebsiteinbrowser](https://github.com/user-attachments/assets/0f39c33e-9743-458c-8d6c-7755bf149f87)
 
 
-
+25.  As you can see in the screenshot the site is not secure.
    
+![NotSecure](https://github.com/user-attachments/assets/56b112bb-4f36-4607-9daf-04ee0859e6d3)
+
 
 
 
