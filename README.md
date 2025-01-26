@@ -79,7 +79,23 @@ sudo ufw status
 
 ![UFWallowApacheFull](https://github.com/user-attachments/assets/7ea2fd35-2fdf-4c17-a089-1b284ac34fdc)
 
-22.
+22. We will now create the directories for the website
+    cd /var/www/html
+
+    sudo mkdir "websitename.com"
+
+    cd "websitename.com"
+
+    sudo mkdir "public_html"
+
+    sudo mkdir "log"
+
+    sudo mkdir "backups"
+
+22. cd /etc/apache2
+    go to "sites-available" directory
+
+we will make a new .conf file 
 
 
  
