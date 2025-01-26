@@ -38,8 +38,30 @@ Note the -y will auto answer yes to any prompts
 12. Disable root access via ssh.
 
 sudo nano /etc/ssh/sshd_config
-scroll down and remove "yes" from "Permit root login" Type "No"
+scroll down and remove "yes" from "Permit root login" Type "No"  (write the file ctrl O ctrl x)
 ![SShd_config](https://github.com/user-attachments/assets/4ad0f460-8d6d-40e2-b7b2-6f0a3f05f979)
+
+13. Restart Daemon. sudo systemctl restart sshd
+(NOTE)  IF SERVICE NOT FOUND USE sudo systemctl -l --type service --all | grep ssh
+this will show all the services running labeled ssh
+![sudosystemctlrestartsSSHD](https://github.com/user-attachments/assets/ccda5621-f19b-4a92-b85d-3fbe71697d0a)
+
+
+
+15. 
+
+16. 
+
+17. 
+
+18. 
+
+19.
+
+20.
+
+21.
+
 
 
  
