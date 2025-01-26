@@ -11,7 +11,14 @@ default to a maintenance page which will load when disabling your default index 
 
 2. Login to your Linode box using ssh Yourusername@yourip
 
-3. 
+3. run apt update && upgrade -y
+Note the -y will auto answer yes to any prompts
+
+4. run sudo reboot after updates complete.
+  as a side note the Lish Console will show you real time when the box is rebooting.
+![linoderebootLish](https://github.com/user-attachments/assets/3b9983e9-afd9-4f65-8ba8-6d6666357eaa)
+
+   
 . In you domain host records the below changes must be applied.  
 ![GodaddyHost records](https://github.com/user-attachments/assets/b402ef49-0256-4626-b8ce-268554e7f633)
 
