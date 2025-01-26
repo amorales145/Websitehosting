@@ -67,7 +67,7 @@ this will show all the services running labeled ssh
 sudo ufw applist.  This will list available applications for the firewall.
 ![showfirewallapplist](https://github.com/user-attachments/assets/2d89e322-3ae5-48ab-aaec-200c48c9a07a)
 
-21. We will now configure and enable the firewall
+21. We will now configure and enable and update the firewall rules
 
 sudo ufw allow 'Apache full'
 sudo allow OpenSSH
@@ -75,7 +75,7 @@ sudo ufw enable
 sudo ufw status
 ![UFWallowApacheFull](https://github.com/user-attachments/assets/7ea2fd35-2fdf-4c17-a089-1b284ac34fdc)
 
-22. 
+22.
 
 
  
