@@ -105,6 +105,14 @@ sudo ufw status
     the file is available to copy and paste in the Maintenance_ConfigFile_Changes.txt file provided.
     ![newConfigfile](https://github.com/user-attachments/assets/04a3e944-adbe-4309-91fc-da4d49709ec3)
 
+23. Enable the site with following command
+
+    sudo a2ensite "websitename.com"
+
+![enablingsiteaftera2ensite](https://github.com/user-attachments/assets/31747445-e4a1-4b4b-9050-ccae9a412c03)
+
+    
+
 
 
 
