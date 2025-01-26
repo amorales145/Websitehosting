@@ -1,10 +1,11 @@
 # Websitehosting
 Website hosting with Linode Ubuntu image running Apache2
 
-Hello everyone. I have created this how to for educational purposes. This is a simple how to for
-Hosting your own website.  There is also some info in here regarding configuring an SSL certificate. 
-I have also included detailed information on editing config files for both http and https in order to
-default to a maintenance page which will load when disabling your default index page.
+Hello everyone. I have created this document for educational purposes. This is a simple procedure for
+Hosting your own website. There is also some info in here regarding configuring an SSL certificate. 
+I will also be including a detailed text file with information on editing config files to allow a 
+maintenance.html page to default and load automatically using the "ReWriteRule" when disabling your default index.html
+for updates or editing and updating purposes of your website.
 
 1. Create an account on Linode.com and proceed to setup the below Ubuntu server.
 ![Linode Ubuntu](https://github.com/user-attachments/assets/af481ade-2210-4825-b774-406ff41e7046)
@@ -95,7 +96,10 @@ sudo ufw status
 22. cd /etc/apache2
     go to "sites-available" directory
 
-we will make a new .conf file 
+    (we will make a new .conf file)
+    sudo nano "websitename.com.conf"
+    
+
 
 
  
