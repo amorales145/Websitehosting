@@ -126,7 +126,16 @@ As you can see once you load your website in the screenshot below the site is no
 
 
 
+26. An SSL certificate is a digital certificate that verifies a website's identity and enables secure, encrypted communication between the web server and the browser. SSL, which stands for Secure Sockets Layer, is a security protocol that establishes an encrypted connection. In today's online environment, having an SSL certificate is essential. To install an SSL certificate, ensure your domain is properly linked to your Apache server and then follow the steps outlined below.
 
+Command: sudo apt install certbot python3-certbot-apache
+
+![installingSSLcert](https://github.com/user-attachments/assets/b27a4eb5-679c-4be1-ac38-69aae23e663f)
+
+
+
+
+    
 
 
 
