@@ -18,7 +18,14 @@ Note the -y will auto answer yes to any prompts
   as a side note the Lish Console will show you real time when the box is rebooting.
 ![linoderebootLish](https://github.com/user-attachments/assets/3b9983e9-afd9-4f65-8ba8-6d6666357eaa)
 
-   
-. In you domain host records the below changes must be applied.  
+5. In you domain host A records the below changes must be applied. Update the IP address to the IP of your Linode server.
 ![GodaddyHost records](https://github.com/user-attachments/assets/b402ef49-0256-4626-b8ce-268554e7f633)
+
+6. Log back into your Linode box via ssh.  ssh username@ipaddress
+
+7. cd /Etc
+
+8. nano hosts  (Enter IP address 127.0.1.1 and your domain name)
+![hostsfile](https://github.com/user-attachments/assets/f3a68670-3ee8-400b-8010-cc3c256c7e5f)
+ 
 
