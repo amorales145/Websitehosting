@@ -19,7 +19,8 @@ Note the -y will auto answer yes to any prompts
   as a side note the Lish Console will show you real time when the box is rebooting.
 ![linoderebootLish](https://github.com/user-attachments/assets/3b9983e9-afd9-4f65-8ba8-6d6666357eaa)
 
-5. In you domain host A records the below changes must be applied. Update the IP address to the IP of your Linode server.
+5. In your domain host A records the below changes must be applied. Update the IP address to the IP of your Linode server.
+In my case I used godaddy but you should be able to make these changes on whatever domain company you used.
 ![GodaddyHost records](https://github.com/user-attachments/assets/b402ef49-0256-4626-b8ce-268554e7f633)
 
 6. Log back into your Linode box via ssh.  ssh username@ipaddress
