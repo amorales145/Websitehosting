@@ -133,6 +133,9 @@ Command: sudo apt install certbot python3-certbot-apache
 ![installingSSLcert](https://github.com/user-attachments/assets/b27a4eb5-679c-4be1-ac38-69aae23e663f)
 
 
+27. Getting certificate: sudo certbot --apache -d yourdomain.com
+
+![GettingCert](https://github.com/user-attachments/assets/de41bdc3-c3cc-4ed2-9ef3-7896d006af72)
 
 
     
