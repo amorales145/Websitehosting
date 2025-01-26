@@ -137,7 +137,10 @@ Command: sudo apt install certbot python3-certbot-apache
 
 ![GettingCert](https://github.com/user-attachments/assets/de41bdc3-c3cc-4ed2-9ef3-7896d006af72)
 
+28.  Reload website and you will see connection is secure.
 
+![ConnectionSecure](https://github.com/user-attachments/assets/62244c76-1380-4916-9c46-5777c12df1e8)
+    
     
 
 
