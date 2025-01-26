@@ -1,0 +1,118 @@
+Configuration for applying maintenance file
+Both non ssl and ssl config file must be edited.
+Config file are located in /etc/apache2/sites-enabled.
+apache automatically creates these file.  You just need to edit them with the information below.
+
+nonssl old file:
+
+ <VirtualHost *:80>
+     ServerAdmin "your email address"
+     ServerName "your domain name.com"
+     ServerAlias "your domain name.com"
+     DocumentRoot /var/www/html/"your domain name.com"/public_html/
+     ErrorLog /var/www/html/"your domain name.com"/log/error.log
+     CustomLog /var/www/html/"your domain name.com"/log/access.log combined
+RewriteEngine on
+RewriteCond %{SERVER_NAME} ="your domain name.com"
+RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+
+# Check if index.html exists, otherwise serve maintenance.html
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} /index.html$
+        RewriteCond %{DOCUMENT_ROOT}/index.html !-f
+        RewriteRule ^(.*)$ /maintenance.html [L]
+    </IfModule>
+
+</VirtualHost>
+
+
+
+------------------------------------------------------------------------
+
+nonssl NewFile:
+
+<VirtualHost *:80>
+    ServerAdmin "your email address"
+    ServerName "your domain name.com"
+    ServerAlias "your domain name.com"
+    DocumentRoot /var/www/html/"your domain name.com"/public_html/
+    ErrorLog /var/www/html/"your domain name.com"/log/error.log
+    CustomLog /var/www/html/"your domain name.com"/log/access.log combined
+
+    # Check if index.html exists, otherwise serve maintenance.html
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} /index.html$
+        RewriteCond %{DOCUMENT_ROOT}/index.html !-f
+        RewriteRule ^(.*)$ /maintenance.html [L]
+    </IfModule>
+
+    # Redirect HTTP to HTTPS
+    RewriteEngine on
+    RewriteCond %{SERVER_NAME} ="your domain name.com"
+    RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+
+</VirtualHost>
+
+
+--------------------------------------------------------------------------------------
+
+
+ssl oldfile:
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+     ServerAdmin "your email address"
+     ServerName "your domain name.com"
+     ServerAlias "your domain name.com"
+     DocumentRoot /var/www/html/"your domain name.com"/public_html/
+     ErrorLog /var/www/html/"your domain name.com"/log/error.log
+     CustomLog /var/www/html/"your domain name.com"/log/access.log combined
+
+# Check if index.html exists, otherwise serve maintenance.html
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} /index.html$
+        RewriteCond %{DOCUMENT_ROOT}/index.html !-f
+        RewriteRule ^(.*)$ /maintenance.html [L]
+
+SSLCertificateFile /etc/letsencrypt/live/"your domain name.com"/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/"your domain name.com"/privkey.pem
+Include /etc/letsencrypt/options-ssl-apache.conf
+</VirtualHost>
+</IfModule>
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+ssl newfile:
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+    ServerAdmin "your email address"
+    ServerName "your domain name.com"
+    ServerAlias "your domain name.com"
+    DocumentRoot /var/www/html/"your domain name.com"/public_html/
+    
+    # SSL Directives
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/"your domain name.com"/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/"your domain name.com"/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+    
+    # Check if index.html exists, otherwise serve maintenance.html
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} /index.html$
+        RewriteCond %{DOCUMENT_ROOT}/index.html !-f
+        RewriteRule ^(.*)$ /maintenance.html [L]
+    </IfModule>
+
+    # Error and Access logs
+    ErrorLog /var/www/html/"your domain name.com"/log/error_ssl.log
+    CustomLog /var/www/html/"your domain name.com"/log/access_ssl.log combined
+</VirtualHost>
+</IfModule>
