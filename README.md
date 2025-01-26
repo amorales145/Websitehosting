@@ -99,31 +99,10 @@ sudo ufw status
 
     (we will make a new .conf file)
     sudo nano "websitename.com.conf"
-    
-    Copy and paste below info into file.
+You need to paste the information in this file into your new config file.
+the file is available to copy and paste in the Maintenance_ConfigFile_Changes.txt file provided.
+    ![newConfigfile](https://github.com/user-attachments/assets/04a3e944-adbe-4309-91fc-da4d49709ec3)
 
-    **<VirtualHost *:80>
-    ServerAdmin "your email address"
-    ServerName "your domain name.com"
-    ServerAlias "your domain name.com"
-    DocumentRoot /var/www/html/"your domain name.com"/public_html/
-    ErrorLog /var/www/html/"your domain name.com"/log/error.log
-    CustomLog /var/www/html/"your domain name.com"/log/access.log combined
-
-    # Check if index.html exists, otherwise serve maintenance.html
-    <IfModule mod_rewrite.c>
-        RewriteEngine On
-        RewriteCond %{REQUEST_URI} /index.html$
-        RewriteCond %{DOCUMENT_ROOT}/index.html !-f
-        RewriteRule ^(.*)$ /maintenance.html [L]
-    </IfModule>
-
-    # Redirect HTTP to HTTPS
-    RewriteEngine on
-    RewriteCond %{SERVER_NAME} ="your domain name.com"
-    RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
-
-</VirtualHost>**
 
 
 
