@@ -51,18 +51,31 @@ this will show all the services running labeled ssh
 
 15. install apache. sudo apt install apache2 apache2-doc apache2-utils
 
-16. check if apache running systemctl status apache2
+16. check if apache running.  systemctl status apache2
+![APacheStatus](https://github.com/user-attachments/assets/6195ccf0-a0d7-4b8f-a636-4ea0f3860e78)
 
-17. 
+17. Open browser and go to your linode box's IP
 
-18. 
+18. Disable default site. we will disable the defaultsite as the configuration is not adequate or configured properly.
+    we will create our own site and setup the directories.
+    sudo a2dissite 000-default.conf
 
-19.
+19. Activate new config. sudo systemctl reload apache2
 
-20.
+20. firewall configuration.  we will make some changes to the firewall.
 
-21.
+sudo ufw applist.  This will list available applications for the firewall.
+![showfirewallapplist](https://github.com/user-attachments/assets/2d89e322-3ae5-48ab-aaec-200c48c9a07a)
 
+21. We will now configure and enable the firewall
+
+sudo ufw allow 'Apache full'
+sudo allow OpenSSH
+sudo ufw enable
+sudo ufw status
+![UFWallowApacheFull](https://github.com/user-attachments/assets/7ea2fd35-2fdf-4c17-a089-1b284ac34fdc)
+
+22. 
 
 
  
