@@ -120,6 +120,7 @@ Go to your website and you will see the default Index of page.
 
 25.  As you can see in the screenshot the site is not secure.
    
+  ![NotSecure](https://github.com/user-attachments/assets/49f5288e-5eba-4295-bbc6-a662b8d4d55c)
 
 
 
