@@ -76,6 +76,7 @@ sudo allow OpenSSH
 sudo ufw enable
 
 sudo ufw status
+
 ![UFWallowApacheFull](https://github.com/user-attachments/assets/7ea2fd35-2fdf-4c17-a089-1b284ac34fdc)
 
 22.
